@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trò chơi cơ khí</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Trò chơi thực hành cơ khí</h1>
+  
+  <div id="game-container"> 
+    <video id="webcam" autoplay playsinline></video>
+    <canvas id="canvas"></canvas>
+    <div id="hud">
+      <div id="action">Hãy thực hiện: Cưa</div>
+      <div id="score">Điểm: 0</div>
+    </div>
+  </div>
+
+  <button id="startBtn">Bắt đầu trò chơi</button>
+  <button id="endBtn">Kết thúc trò chơi</button>
+
+  <!-- Thư viện -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
